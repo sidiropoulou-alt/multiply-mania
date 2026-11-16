@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Multiply by Multiples of 10 — Third Grade Challenge</title>
+<style>
+  :root { --ink:#1f2933; --line:#c9d2da; --accent:#2b6cb0; --soft:#eef3f8; }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; padding:24px;
+    font-family:"Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color:var(--ink); background:#fff; line-height:1.4;
+  }
+  .sheet { max-width:820px; margin:0 auto; }
+
+  header { text-align:center; border-bottom:3px solid var(--accent); padding-bottom:10px; }
+  h1 { font-size:24px; margin:0 0 4px; color:var(--accent); }
+  .sub { font-size:14px; color:#52606d; margin:0; }
+
+  .meta { display:flex; justify-content:space-between; gap:16px; margin:14px 0 6px; font-size:14px; }
+  .meta span { flex:1; border-bottom:1.5px solid var(--line); padding:0 4px 3px; }
+
+  .hint {
+    background:var(--soft); border:1px solid var(--line); border-radius:8px;
+    padding:10px 14px; margin:14px 0 18px; font-size:14px;
+  }
+  .hint strong { color:var(--accent); }
+  .example { font-family:"Courier New", monospace; font-size:15px; }
+
+  h2 { font-size:17px; margin:22px 0 4px; color:var(--accent); }
+  .dir { font-size:13.5px; font-style:italic; color:#52606d; margin:0 0 12px; }
+
+  ol.problems { list-style:none; margin:0; padding:0; }
+  ol.problems.grid {
+    display:grid; grid-template-columns:1fr 1fr; gap:10px 28px;
+  }
+  ol.problems li {
+    display:flex; align-items:baseline; gap:8px;
+    font-size:18px; padding:7px 2px; border-bottom:1px dotted var(--line);
+  }
+  .num { color:var(--accent); font-weight:700; min-width:26px; }
+  .eq { letter-spacing:0.5px; }
+  .blank { display:inline-block; min-width:70px; border-bottom:2px solid var(--ink); }
+  .small-blank { display:inline-block; min-width:48px; border-bottom:2px solid var(--ink); }
+
+  .challenge li { font-size:16px; display:block; padding:12px 2px 14px 34px; position:relative; }
+  .challenge li .num { position:absolute; left:0; top:12px; }
+  .work { display:block; margin-top:6px; min-height:44px; border-bottom:1px solid var(--line); }
+  .work.short { min-height:26px; }
+
+  .pagebreak { page-break-before:always; break-before:page; }
+  .key { margin-top:10px; }
+  .key h2 { margin-top:18px; }
+  .key-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:6px 18px; font-size:15px; }
+  .key-grid span { border-bottom:1px dotted var(--line); padding:3px 0; }
+  .key-challenge { font-size:14.5px; }
+  .key-challenge li { margin-bottom:10px; }
+
+  @media print {
+    body { padding:0; }
+    .sheet { max-width:100%; }
+    .no-print { display:none; }
+    @page { margin:16mm; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <!-- ============ WORKSHEET ============ -->
+  <header>
+    <h1>Multiply by Multiples of 10</h1>
+    <p class="sub">Third Grade Challenge &nbsp;•&nbsp; 20 Practice Questions + 5 Bonus Challenges</p>
+  </header>
+
+  <div class="meta">
+    <span>Name:</span>
+    <span>Date:</span>
+    <span>Score: &nbsp;&nbsp;&nbsp; / 25</span>
+  </div>
+
+  <div class="hint">
+    <strong>Remember the pattern:</strong> multiply the front digits first, then add the zero.<br>
+    <span class="example">3 &times; 4 = 12 &nbsp;&rarr;&nbsp; 3 &times; 40 = 120</span> &nbsp;&nbsp;•&nbsp;&nbsp;
+    <span class="example">6 &times; 5 = 30 &nbsp;&rarr;&nbsp; 6 &times; 50 = 300</span>
+  </div>
+
+  <h2>Part A &nbsp;— Find each product.</h2>
+  <p class="dir">Write your answer on the line.</p>
+  <ol class="problems grid" id="partA">
+    <li><span class="num">1.</span><span class="eq">2 &times; 30 =</span><span class="blank"></span></li>
+    <li><span class="num">2.</span><span class="eq">4 &times; 20 =</span><span class="blank"></span></li>
+    <li><span class="num">3.</span><span class="eq">5 &times; 10 =</span><span class="blank"></span></li>
+    <li><span class="num">4.</span><span class="eq">3 &times; 40 =</span><span class="blank"></span></li>
+    <li><span class="num">5.</span><span class="eq">6 &times; 50 =</span><span class="blank"></span></li>
+    <li><span class="num">6.</span><span class="eq">7 &times; 20 =</span><span class="blank"></span></li>
+    <li><span class="num">7.</span><span class="eq">8 &times; 30 =</span><span class="blank"></span></li>
+    <li><span class="num">8.</span><span class="eq">9 &times; 10 =</span><span class="blank"></span></li>
+    <li><span class="num">9.</span><span class="eq">4 &times; 60 =</span><span class="blank"></span></li>
+    <li><span class="num">10.</span><span class="eq">5 &times; 70 =</span><span class="blank"></span></li>
+    <li><span class="num">11.</span><span class="eq">3 &times; 80 =</span><span class="blank"></span></li>
+    <li><span class="num">12.</span><span class="eq">6 &times; 40 =</span><span class="blank"></span></li>
+    <li><span class="num">13.</span><span class="eq">2 &times; 90 =</span><span class="blank"></span></li>
+    <li><span class="num">14.</span><span class="eq">7 &times; 30 =</span><span class="blank"></span></li>
+    <li><span class="num">15.</span><span class="eq">8 &times; 20 =</span><span class="blank"></span></li>
+    <li><span class="num">16.</span><span class="eq">9 &times; 50 =</span><span class="blank"></span></li>
+    <li><span class="num">17.</span><span class="eq">4 &times; 50 =</span><span class="blank"></span></li>
+    <li><span class="num">18.</span><span class="eq">6 &times; 60 =</span><span class="blank"></span></li>
+    <li><span class="num">19.</span><span class="eq">8 &times; 40 =</span><span class="blank"></span></li>
+    <li><span class="num">20.</span><span class="eq">7 &times; 70 =</span><span class="blank"></span></li>
+  </ol>
+
+  <h2>Part B &nbsp;— Challenge Yourself!</h2>
+  <p class="dir">Show your thinking. Draw or write your work on the lines.</p>
+  <ol class="problems challenge" id="partB">
+    <li>
+      <span class="num">21.</span>
+      A box holds <strong>40 pencils</strong>. How many pencils are in <strong>7 boxes</strong>?
+      <span class="work"></span>
+    </li>
+    <li>
+      <span class="num">22.</span>
+      Find the missing number: &nbsp; 6 &times; <span class="small-blank"></span> = 420
+      <span class="work short"></span>
+    </li>
+    <li>
+      <span class="num">23.</span>
+      Mia reads <strong>30 pages</strong> every day for <strong>5 days</strong>. Then she reads
+      <strong>20 more pages</strong> on the last day. How many pages does she read in all?
+      <span class="work"></span>
+    </li>
+    <li>
+      <span class="num">24.</span>
+      Watch the pattern grow! &nbsp; 3 &times; 20 = 60, &nbsp; 3 &times; 200 = <span class="small-blank"></span>.
+      <span class="work short"></span>
+    </li>
+    <li>
+      <span class="num">25.</span>
+      Which is greater: <strong>8 &times; 40</strong> or <strong>6 &times; 50</strong>?
+      Solve both, then circle the greater one and explain how you know.
+      <span class="work"></span>
+    </li>
+  </ol>
+
+  <!-- ============ ANSWER KEY ============ -->
+  <div class="pagebreak"></div>
+  <header class="key">
+    <h1>Answer Key</h1>
+    <p class="sub">Multiply by Multiples of 10 — Third Grade Challenge</p>
+  </header>
+
+  <h2>Part A — Products</h2>
+  <div class="key-grid">
+    <span>1. &nbsp;60</span><span>2. &nbsp;80</span><span>3. &nbsp;50</span><span>4. &nbsp;120</span>
+    <span>5. &nbsp;300</span><span>6. &nbsp;140</span><span>7. &nbsp;240</span><span>8. &nbsp;90</span>
+    <span>9. &nbsp;240</span><span>10. 350</span><span>11. 240</span><span>12. 240</span>
+    <span>13. 180</span><span>14. 210</span><span>15. 160</span><span>16. 450</span>
+    <span>17. 200</span><span>18. 360</span><span>19. 320</span><span>20. 490</span>
+  </div>
+
+  <h2>Part B — Challenges</h2>
+  <ol class="key-challenge">
+    <li><strong>21.</strong> &nbsp;7 &times; 40 = <strong>280 pencils</strong> <br>
+      <em>(Think: 7 &times; 4 = 28, then add a zero.)</em></li>
+    <li><strong>22.</strong> &nbsp;The missing number is <strong>70</strong>. Check: 6 &times; 70 = 420. <br>
+      <em>(Think: make 420 a friendly number — 42 &divide; 6 = 7, then add a zero.)</em></li>
+    <li><strong>23.</strong> &nbsp;30 &times; 5 = 150, then 150 + 20 = <strong>170 pages</strong>.</li>
+    <li><strong>24.</strong> &nbsp;3 &times; 200 = <strong>600</strong>. <br>
+      <em>(The pattern: 3 &times; 2 = 6, then add two zeros.)</em></li>
+    <li><strong>25.</strong> &nbsp;8 &times; 40 = <strong>320</strong> &nbsp;and&nbsp; 6 &times; 50 = <strong>300</strong>.
+      So <strong>8 &times; 40</strong> is greater by 20. <br>
+      <em>(Think: 8 &times; 4 = 32 &rarr; 320, and 6 &times; 5 = 30 &rarr; 300.)</em></li>
+  </ol>
+
+  <p class="dir" style="margin-top:24px;">Great job! &nbsp;Total points: 25 &nbsp;(1 point per practice question, 1 point per challenge question.)</p>
+
+</div>
+</body>
+</html>
